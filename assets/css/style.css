@@ -1,3 +1,6 @@
+@import url('_variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Chewy&family=Gochi+Hand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedgwick+Ave+Display&family=Titan+One&family=Unbounded:wght@200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +8,114 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.d-flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: .875rem;
+}
+
+.btn_Login {
+    padding: 8px 18px;
+    border: 1px solid var(--light-color);
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    color: var(--light-color);
+}
+
+.btn_Login span {
+    display: none;
+}
+
+.main-header {
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), 
+                      url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.navbar {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo span{
+    margin-left: 10px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--light-color);
+}
+
+.main-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100dvh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.main-menu li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main-menu li a {
+    color: var(--dark-color);
+}
+
+/* ...........Media queries........., */
+@media screen and (min-width: 1150px) {
+    .content-wrap {
+        padding: 0;
+    }
+    .btn_Login {
+        padding: 12px 28px;
+    }
+
+    .btn_Login span {
+        display: inline;
+    }
+
+    .btn_Login i {
+        display: none;
+    }
 }

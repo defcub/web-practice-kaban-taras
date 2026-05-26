@@ -4,27 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Practice</title>
+    <title>CloudBudget</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+     
 </head>
 
 <body>
-    <header>
-        <h1>Мій вебпроєкт</h1>
+    <header class="main-header">
+        <div class="navbar content-wrap d-flex">
+            <nav class="d-flex">
+                <div class="logo d-flex">
+                    <img src="assets/images/logo.svg" alt="main logo">
+                    <span class="uppercase">CloudBudget</span>
+                </div>
+                <div class="menu-icon">
+                    <div class="menu-icon-open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="menu-icon-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <ul class="main-menu">
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">technology</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">sign up</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn_Login">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <span>Login</span>
+            </button>
+        </div>
+
+
     </header>
-    <main>
-        <section>
-            <h2>Головна секція</h2>
-            <p>
-                Це перша сторінка навчального вебпроєкту.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 2026 Навчальна практика
-        </p>
-    </footer>
+
     <script src="assets/js/main.js"></script>
 </body>
 
