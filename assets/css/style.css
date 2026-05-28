@@ -136,11 +136,9 @@ ul {
     color: var(--dark-color);
 }
 
-/* ...........Media queries........., */
+/* ..........................Media-queries................................., */
+
 @media screen and (min-width: 1150px) {
-    .content-wrap {
-        padding: 0;
-    }
     .btn_Login {
         padding: 12px 28px;
     }
@@ -151,5 +149,36 @@ ul {
 
     .btn_Login i {
         display: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    .main-menu {
+        position: static;
+        right: 2500px;
+        width: 100%; 
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--light-color);
+        font-size: 1.5rem;
+    }
+    .main-menu li:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .main-menu li a {
+        color: var(--light-color);
+        font-size: .875rem;
+    }
+}
+    @media screen and (min-width: 1150px) {
+    .content-wrap {
+        padding: 0;
     }
 }
