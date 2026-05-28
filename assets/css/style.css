@@ -50,6 +50,7 @@ ul {
     text-transform: uppercase;
     border-radius: 6px;
     font-size: .875rem;
+    cursor: pointer;
 }
 
 .btn_Login {
@@ -57,8 +58,14 @@ ul {
     margin-left: auto;
     border: 1px solid var(--light-color);
     background: none repeat scroll 0 0 transparent;
-    cursor: pointer;
     color: var(--light-color);
+}
+
+.btn_light {
+    padding: 16px 52px;
+    border: none;
+    background-color: var(--light-color);
+    color: var(--main-color);
 }
 
 .btn_Login span {
@@ -67,19 +74,21 @@ ul {
 
 .main-header {
     height: 100vh;
-    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), 
-                      url(../images/header-bg.png);
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+        url(../images/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: var(--light-color);
 }
 
 .content-wrap {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 20px;
-    
+
 }
+
 /* ----------------------------------------NAVBAR-------------------------------------------- */
 .navbar {
     height: 60px;
@@ -87,7 +96,7 @@ ul {
     align-items: center;
 }
 
-.navbar nav{
+.navbar nav {
     width: 100%;
 }
 
@@ -102,19 +111,20 @@ ul {
     width: 25px;
 }
 
-.navbar .logo span{
+.navbar .logo span {
     margin-left: 10px;
     line-height: 40px;
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--light-color);
 }
+
 /* ----------------------------------------MAIN-MENU------------------------------------------- */
 .main-menu {
     position: absolute;
     top: 60px;
     right: 2500px;
-    width: 100vw; 
+    width: 100vw;
     height: calc(100dvh - 60px);
     display: flex;
     flex-direction: column;
@@ -136,9 +146,55 @@ ul {
     color: var(--dark-color);
 }
 
+/* ----------------------------------------HEADER------------------------------------------- */
+.header-content-wrap {
+    flex-direction: column;
+    height: calc(100% - 60px);
+}
+
+.header-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.header-subtitle {
+    max-width: 540px;
+    margin-bottom: 20px;
+    line-height: 150%;
+    text-align: center;
+    font-size: .875rem;
+}
+
 /* ..........................Media-queries................................., */
 
-@media screen and (min-width: 1150px) {
+
+/* ..........................768........................................... */
+
+@media screen and (min-width: 768px) {
+    .header-title {
+        margin-bottom: 40px;
+        font-size: 4.5rem;
+    }
+
+    .header-subtitle {
+        max-width: 540px;
+        margin-bottom: 40px;
+        line-height: 150%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+/* ..........................992......................................... */
+@media screen and (min-width: 992px) {
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar .logo span {
+        line-height: 1000px;
+    }
+
     .btn_Login {
         padding: 12px 28px;
     }
@@ -150,6 +206,7 @@ ul {
     .btn_Login i {
         display: none;
     }
+
     .menu-icon {
         display: none;
     }
@@ -157,7 +214,7 @@ ul {
     .main-menu {
         position: static;
         right: 2500px;
-        width: 100%; 
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -167,6 +224,7 @@ ul {
         color: var(--light-color);
         font-size: 1.5rem;
     }
+
     .main-menu li:not(:last-child) {
         margin-bottom: 0;
         margin-right: 15px;
@@ -176,8 +234,13 @@ ul {
         color: var(--light-color);
         font-size: .875rem;
     }
+
+    .header-content-wrap {
+        height: calc(100% - 100px);
+    }
 }
-    @media screen and (min-width: 1150px) {
+/* ..........................1150........................................ */
+@media screen and (min-width: 1150px) {
     .content-wrap {
         padding: 0;
     }
