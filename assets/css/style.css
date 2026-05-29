@@ -42,6 +42,10 @@ ul {
     align-items: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .vertical-center {
     align-items: center;
 }
@@ -297,8 +301,35 @@ ul {
     font-size: 1.75rem;
     margin-right: 24px;
 }
+/* ..........................PAGE 3 Cards................................., */
 
+.cards-section {
+    padding-top: 32px;
+    padding-bottom: 62px;
+    background-color: #FAFAFA;
+}
 
+.cards-section .section-title {
+    margin-bottom: 32px;
+}
+
+.row{
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card {
+    max-width: 350px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.row-item {
+
+}
+ 
 
 
 /* ..........................Media-queries................................., */
@@ -318,6 +349,14 @@ ul {
         line-height: 150%;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .col-1-2 {
+        width: calc(50% - 15px);
+    }
+
+    .card {
+        margin: 0;
     }
 }
 
@@ -407,10 +446,23 @@ ul {
         font-size: 1.5rem;
         color: var(--light-color);
     }
+/* -------------------------------CARDS---------------------------- */
+    .cards-section {
+        padding-top: 64px;
+        padding-bottom: 124px;  
+    }
+
+    .cards-section .section-title {
+        margin-bottom: 32px;
+    }
 }
 /* ..........................1150........................................ */
 @media screen and (min-width: 1150px) {
     .content-wrap {
         padding: 0;
+    }
+
+    .col-1-3 {
+        width: calc(33.333333% - 22px);
     }
 }
