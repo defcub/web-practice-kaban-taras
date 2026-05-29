@@ -236,7 +236,7 @@ ul {
 }
 
 .media-section .section-title {
-    margin-bottom: 1.5px;
+    margin-bottom: 1.5rem;
 }
 
 .media-section-content {
@@ -281,6 +281,21 @@ ul {
 .play-btn i {
     font-size: 1.5rem;
     color: var(--light-color);
+}
+
+.media-section_bg {
+    background-color: #ED4C5C;
+    color: var(--light-color);
+}
+
+.media-section_bg .media-section-content p {
+    margin-bottom: 40px;
+}
+
+.media-section_bg .download-icons a {
+    color: var(--light-color);
+    font-size: 1.75rem;
+    margin-right: 24px;
 }
 
 
@@ -359,7 +374,6 @@ ul {
     .header-content-wrap {
         height: calc(100% - 100px);
     }
-                /*  */
 
     .media-section {
         padding: 94px 0;
